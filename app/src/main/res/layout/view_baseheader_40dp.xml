@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="40dp"
+    android:background="@mipmap/top_bg"
+    android:orientation="vertical" >
+	
+    <TextView 
+        android:id="@+id/tv_head_title"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:layout_centerInParent="true"
+        android:text="@string/app_head_title"
+        android:textSize="16sp"
+        android:textColor="@color/white"
+        android:gravity="center"
+        />
+
+    <ImageView 
+        android:id="@+id/iv_head_back"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:layout_centerVertical="true"
+        android:src="@mipmap/back"
+        
+        />
+
+    <ImageView
+        android:id="@+id/iv_head_right"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:layout_centerVertical="true"
+        android:layout_alignParentRight="true"
+        android:src="@mipmap/add"
+        android:layout_marginRight="10dp"
+        android:visibility="gone"
+        />
+
+    <TextView 
+        android:id="@+id/tv_head_right"
+         android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+        android:layout_alignParentRight="true"
+        android:layout_marginRight="10dp"
+       	android:textColor="@color/white"
+       	android:textSize="16sp"
+       	android:visibility="gone"
+       	android:layout_toLeftOf="@+id/iv_head_right"
+        />
+    
+</RelativeLayout>
